@@ -79,7 +79,9 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>capacity-planner</h1>
-        <p className="subtitle">GPU inference concurrency calculator</p>
+        <p className="subtitle">
+          GPU inference concurrency calculator &mdash; <a href="/docs">how this works</a>
+        </p>
       </header>
 
       <div className="layout">
