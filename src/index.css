@@ -1,0 +1,42 @@
+:root {
+  --mono: 'JetBrains Mono', 'SFMono-Regular', 'Menlo', 'Consolas', monospace;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+  --bg: #0a0f0f;
+  --bg-panel: #0f1717;
+  --bg-inset: #0d1414;
+  --border: #223030;
+  --border-strong: #2a3a3a;
+  --text: #d7e6e0;
+  --text-dim: #6b8a8a;
+  --accent: #39d98a;
+  --accent-dim: #1f7a52;
+  --warn: #e8c339;
+  --danger: #e85f5f;
+
+  color-scheme: dark;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.mono {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
