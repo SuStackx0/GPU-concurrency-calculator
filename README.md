@@ -17,6 +17,10 @@ bytesPerTokenKV  = 2 * layers * kvHeads * headDim * kvBytesPerElem
 maxConcurrent    = floor(kvBudgetGB * 1e9 / (bytesPerTokenKV * avgSeqLen))
 ```
 
+See [docs/METHODOLOGY.md](docs/METHODOLOGY.md) for the full derivation — including why memory
+bandwidth sets the absolute throughput scale but does not decide the bandwidth-vs-capacity
+verdict (that's a property of the weight/KV byte ratio instead).
+
 ## Run it
 
 ```
